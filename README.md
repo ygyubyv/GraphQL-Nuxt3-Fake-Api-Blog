@@ -1,72 +1,52 @@
-# Nuxt Minimal Starter
+# Nuxt 3 Mini Blog
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+💡 Простий блог-додаток, побудований на **Nuxt 3**, з використанням **GraphQL API FakeAPI**, **TypeScript**, **Tailwind CSS** та повним CRUD функціоналом.
 
-## Setup
+## 🔗 API
 
-Make sure to install dependencies:
+Цей проєкт використовує **публічне GraphQL API** від [GraphQL Zero](https://graphqlzero.almansi.me/):
+
+
+## 🔧 Функціонал
+
+- 📄 Перегляд усіх постів з пагінацією та пошуком
+- ➕ Створення нового поста
+- ✏️ Редагування постів
+- 🗑️ Видалення постів з підтвердженням
+- 👁 Перегляд детальної інформації про пост та коментарі
+- ⚙️ GraphQL інтеграція через Apollo
+- 🌗 Підтримка темної теми
+- 🔔 Сповіщення про дії користувача
+
+## 🧰 Технології
+
+- [Nuxt 3](https://nuxt.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [GraphQL](https://graphql.org/)
+- [Apollo Client](https://apollo.vuejs.org/)
+
+## 🗂️ Структура
+
+- `/pages` – сторінки (список постів, створення, перегляд одного поста)
+- `/components` – UI компоненти (спінер, кнопки, форми, підтвердження)
+- `/graphQL` – GraphQL-запити та мутації
+- `/types` – повна типізація GraphQL-даних
+- `/composables` – кастомні хелпери (пости, мутації)
+
+## 🚀 Запуск проєкту
 
 ```bash
-# npm
+# 1. Клонувати репозиторій
+git clone https://github.com/your-username/nuxt3-mini-blog.git
+
+# 2. Встановити залежності
+cd nuxt3-mini-blog
 npm install
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+# 3. Запустити у режимі розробки
 npm run dev
 
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
 
 # bun
 bun run preview
